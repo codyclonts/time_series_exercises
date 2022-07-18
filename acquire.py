@@ -37,11 +37,6 @@ def get_items(use_cache=True):
         return df 
 
 def get_stores(use_cache =True):
-   '''
-    This function checks for a csv and returns the csv as a df if one exists. 
-    If no csv exists, it creates one, saves it, then returns the csv as a df.
-    '''
-    
     filename = 'stores.csv'
     # check for csv
     if os.path.isfile(filename) and use_cache:
@@ -135,7 +130,7 @@ def get_merged_data(use_cache=True):
         return df
 
 
-def get_german_power_data(use_cache=True):
+def get_opsd(use_cache=True):
     '''
     This function checks for a csv and returns the csv as a df if one exists. 
     If no csv exists, it creates one, saves it, then returns the csv as a df.
